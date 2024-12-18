@@ -11,6 +11,7 @@ html {
 }
 body{
 	background-color: #b6d9e142;
+	
 }
 a {
 	text-decoration: none;
@@ -509,7 +510,7 @@ p {
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-image: linear-gradient(60deg, #1a3b60 0%, #212223 70%);
 }
 #footer .footer {
 	min-height: 200px;
@@ -527,6 +528,9 @@ p {
 }
 #footer .social-icon {
 	display: flex;
+	color: #000;
+	background-color: #1a3b60;
+	border-radius: 50%;
 	margin-bottom: 30px;
 }
 #footer .social-item {
@@ -585,22 +589,22 @@ p {
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
-		padding: 20px 60px;
+		padding: 15px 50px;
 	}
 	h1.section-title {
-		font-size: 6rem;
+		font-size: 5.5rem;
 	}
 
 	/* Hero */
 	#hero h1 {
-		font-size: 7rem;
+		font-size: 6.5rem;
 	}
 	/* End Hero */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
-		margin: 2.5%;
+		margin: 1%;
 	}
 	/* End Services Section */
 
@@ -612,8 +616,8 @@ p {
 		flex-direction: row-reverse;
 	}
 	#projects .project-item {
-		height: 400px;
-		margin: 0;
+		height: 300px;
+		margin: 1%;
 		width: 100%;
 		border-radius: 0;
 	}
@@ -630,30 +634,30 @@ p {
 		flex-direction: row;
 	}
 	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
+		width: 560px;
+		height: 360px;
+		padding-left: 40px;
 	}
 	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
+		left: -25px;
+		top: 20px;
+		height: 92%;
+		width: 92%;
+		border: 6px solid crimson;
 	}
 	#about .col-right {
 		text-align: left;
-		padding: 30px;
+		padding: 20px;
 	}
 	#about .col-right h1 {
 		text-align: left;
 	}
 	/* End About */
 
-	/* contact  */
+	/* Contact */
 	#contact .contact {
 		flex-direction: column;
-		padding: 100px 0;
+		padding: 60px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
@@ -666,13 +670,13 @@ p {
 		margin: 0;
 	}
 	#contact .contact-item {
-		width: 30%;
+		width: 25%;
 		margin: 0;
 		flex-direction: row;
 	}
 	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
+		height: 80px;
+		width: 80px;
 	}
 	#contact .contact-item .icon img {
 		object-fit: contain;
@@ -680,9 +684,9 @@ p {
 	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
-		padding-left: 20px;
+		padding-left: 10px;
 	}
-	/* End contact  */
+	/* End Contact */
 }
 /* End Media Query For Tablet */
 
@@ -703,7 +707,7 @@ p {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.8rem;
+		font-size: 1.7rem;
 	}
 	#header .nav-list ul a:after {
 		display: none;
@@ -711,8 +715,43 @@ p {
 	/* End header */
 
 	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
+		flex-basis: 20%;
+		margin: 0.5%;
 	}
+	/* End Services Section */
 }
-/* End  Media Query For Desktop */
+/* Media Query For Mobile Devices (max-width: 768px) */
+/* Media Query for Mobile Devices (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column; /* Stack items */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        margin: 0 auto;
+        padding: 10px;
+        width: 100%; /* Ensure no overflow */
+    }
+
+    .element {
+        margin: 0 auto; /* Center individual items */
+        padding: 10px;
+        max-width: 100%; /* Ensure it doesn't exceed the viewport */
+    }
+
+    #problem-section {
+        overflow-x: hidden; /* Disable horizontal scroll on this section */
+        max-width: 100%;
+    }
+}
