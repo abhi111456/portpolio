@@ -10,7 +10,7 @@ html {
 	scroll-behavior: smooth;
 }
 body{
-	background-color: #b6d9e142;
+	background-image: linear-gradient(60deg,  #929598 0%, #1c4a80 70%);
 	
 }
 a {
@@ -282,7 +282,7 @@ p {
 #services .service-top p {
 	font-size: 18px;
 	font-weight: bold;
-	color: rgb(57, 96, 48);
+	color: rgb(223, 228, 221);
 }
 #services .service-top {
 	max-width: 500px;
@@ -733,7 +733,22 @@ p {
         max-width: 100%;
         overflow-x: hidden;
     }
+	
+	.service-top {
+        padding: 15px; /* Reduce padding for smaller screens */
+    }
 
+    .service-top .section-title {
+        font-size: 2rem; /* Smaller font size */
+        text-align: center; /* Center-align for mobile */
+    }
+
+    .service-top p {
+        font-size: 0.9rem; /* Smaller font size */
+        line-height: 1.4; /* Adjust line height */
+        padding: 10px; /* Add some padding */
+        text-align: center; /* Center-align paragraph */
+    }
     .flex-container {
         display: flex;
         flex-direction: column; /* Stack items */
