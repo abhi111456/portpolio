@@ -509,7 +509,7 @@ p {
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #1a3b60 0%, #212223 70%);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 }
 #footer .footer {
 	min-height: 200px;
@@ -527,9 +527,6 @@ p {
 }
 #footer .social-icon {
 	display: flex;
-	color: #000;
-	background-color: #1a3b60;
-	border-radius: 50%;
 	margin-bottom: 30px;
 }
 #footer .social-item {
@@ -588,22 +585,22 @@ p {
 @media only screen and (min-width: 768px) {
 	.cta {
 		font-size: 2.5rem;
-		padding: 15px 50px;
+		padding: 20px 60px;
 	}
 	h1.section-title {
-		font-size: 5.5rem;
+		font-size: 6rem;
 	}
 
 	/* Hero */
 	#hero h1 {
-		font-size: 6.5rem;
+		font-size: 7rem;
 	}
 	/* End Hero */
 
 	/* Services Section */
 	#services .service-bottom .service-item {
 		flex-basis: 45%;
-		margin: 1%;
+		margin: 2.5%;
 	}
 	/* End Services Section */
 
@@ -615,8 +612,8 @@ p {
 		flex-direction: row-reverse;
 	}
 	#projects .project-item {
-		height: 300px;
-		margin: 1%;
+		height: 400px;
+		margin: 0;
 		width: 100%;
 		border-radius: 0;
 	}
@@ -633,30 +630,30 @@ p {
 		flex-direction: row;
 	}
 	#about .col-left {
-		width: 560px;
-		height: 360px;
-		padding-left: 40px;
+		width: 600px;
+		height: 400px;
+		padding-left: 60px;
 	}
 	#about .about .col-left .about-img::after {
-		left: -25px;
-		top: 20px;
-		height: 92%;
-		width: 92%;
-		border: 6px solid crimson;
+		left: -45px;
+		top: 34px;
+		height: 98%;
+		width: 98%;
+		border: 10px solid crimson;
 	}
 	#about .col-right {
 		text-align: left;
-		padding: 20px;
+		padding: 30px;
 	}
 	#about .col-right h1 {
 		text-align: left;
 	}
 	/* End About */
 
-	/* Contact */
+	/* contact  */
 	#contact .contact {
 		flex-direction: column;
-		padding: 60px 0;
+		padding: 100px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
@@ -669,13 +666,13 @@ p {
 		margin: 0;
 	}
 	#contact .contact-item {
-		width: 25%;
+		width: 30%;
 		margin: 0;
 		flex-direction: row;
 	}
 	#contact .contact-item .icon {
-		height: 80px;
-		width: 80px;
+		height: 100px;
+		width: 100px;
 	}
 	#contact .contact-item .icon img {
 		object-fit: contain;
@@ -683,9 +680,9 @@ p {
 	#contact .contact-item .contact-info {
 		width: 100%;
 		text-align: left;
-		padding-left: 10px;
+		padding-left: 20px;
 	}
-	/* End Contact */
+	/* End contact  */
 }
 /* End Media Query For Tablet */
 
@@ -706,7 +703,7 @@ p {
 		display: inline-block;
 	}
 	#header .nav-list ul li a {
-		font-size: 1.7rem;
+		font-size: 1.8rem;
 	}
 	#header .nav-list ul a:after {
 		display: none;
@@ -714,8 +711,8 @@ p {
 	/* End header */
 
 	#services .service-bottom .service-item {
-		flex-basis: 20%;
-		margin: 0.5%;
+		flex-basis: 22%;
+		margin: 1.5%;
 	}
-	/* End Services Section */
 }
+/* End  Media Query For Desktop */
